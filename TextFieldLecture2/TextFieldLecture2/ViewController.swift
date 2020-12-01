@@ -20,6 +20,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonWasPressed(_ sender: Any) {
+        let number1string = textField1.text!
+        let number2string = textfield2.text!
+        let number1 = Int(number1string)!
+        let number2 = Int(number2string)!
+        
+        let answer = number1 + number2
+        
+        outputLabel.text = String(answer)
+
     }
     
 }
